@@ -22,7 +22,7 @@ jobs:
       - name: Debug
         run: pwd
       - name: Debug 2
-        run: ls
+        run: ls/project
       - name: Build image
         run: |
           docker build \
