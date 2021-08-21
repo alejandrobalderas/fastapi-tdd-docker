@@ -19,6 +19,10 @@ jobs:
       - name: Pull image
         run: |
           docker pull ${{ env.IMAGE }}:latest || true
+      - name: Debug
+        run: pwd
+      - name: Debug 2
+        run: ls
       - name: Build image
         run: |
           docker build \
